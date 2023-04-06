@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Humanity Must Perish
+GenericName=Humanity Must Perish
+Comment=Comedic visual novel about an android as she prepares to destroy humanity
+Exec=zetsubougames-humanitymustperish
+Icon=${SNAP}/meta/gui/zetsubougames-humanitymustperish.png
+Terminal=false
+Type=Application
+Keywords=game;humanity;must;perish;
+Categories=Game

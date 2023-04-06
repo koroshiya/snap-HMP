@@ -1,0 +1,33 @@
+name: zetsubougames-humanitymustperish
+base: core20
+version: '1.2.1'
+summary: Comedic visual novel about an android as she prepares to destroy humanity
+description: |
+  Comedic visual novel about an android dressed as a schoolgirl as she prepares to destroy humanity
+website: https://zetsubou.games/
+license: Proprietary
+
+grade: stable
+confinement: strict
+
+parts:
+  app:
+    source: https://cdn.zetsubou.games/Flatpak/HumanityMustPerish/builds/v1.2.2-all.tar.bz2
+    plugin: dump
+
+apps:
+  zetsubougames-humanitymustperish:
+    command: HumanityMustPerish.sh
+    #desktop: $SNAP/HumanityMustPerish.desktop
+    extensions: [gnome-3-38]
+    plugs:
+      - x11
+      - opengl
+      - audio-playback
+      - joystick
+
+layout:
+  $SNAP/game/saves:
+    symlink: $SNAP_DATA/saves
+  $SNAP/game/cache:
+    symlink: $SNAP_DATA/cache
